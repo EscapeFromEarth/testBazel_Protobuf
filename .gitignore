@@ -1,0 +1,10 @@
+bazel-bin/*
+bazel-out/*
+bazel-testBazel_Protobuf/*
+bazel-testlogs/*
+
+.vscode/*
+
+*.pb.h
+*.pb.cc
+
