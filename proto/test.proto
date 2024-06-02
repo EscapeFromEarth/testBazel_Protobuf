@@ -1,0 +1,9 @@
+syntax = "proto2";
+package Test;
+
+import "proto/Person.proto";
+
+message Group {
+	optional bytes name = 1;
+	repeated Person.Person person = 2; // 组员
+}

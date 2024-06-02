@@ -1,0 +1,19 @@
+syntax = "proto2";
+package Person;
+
+message Phone {
+	optional bytes model = 1; // 手机型号
+	optional string number = 2; // 电话号码
+}
+
+enum Gender {
+	MALE = 1;
+	FEMALE = 2;
+}
+
+message Person {
+	optional bytes name = 1; // 姓名
+	optional Gender gender = 2; // 性别
+	optional string id = 3; // 身份证 id
+	repeated Phone phone = 4; // 手机
+}
