@@ -14,6 +14,7 @@ enum Gender {
 message Person {
 	optional bytes name = 1; // 姓名
 	optional Gender gender = 2; // 性别
-	optional string id = 3; // 身份证 id
-	repeated Phone phone = 4; // 手机
+	optional uint32 age = 3; // 年龄
+	optional string id = 4; // 身份证
+	repeated Phone phone = 5; // 手机
 }
