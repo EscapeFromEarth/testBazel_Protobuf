@@ -1,10 +1,9 @@
-bazel-bin/**
-bazel-out/**
-bazel-testBazel_Protobuf/**
-bazel-testlogs/**
+# 忽略 bazel 产出
+bazel-*
 
+# 忽略 vscode 扩展内容
 .vscode/
 
+# 忽略 proto 文件产出
 *.pb.h
 *.pb.cc
-
