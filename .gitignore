@@ -3,7 +3,7 @@ bazel-out/**
 bazel-testBazel_Protobuf/**
 bazel-testlogs/**
 
-.vscode/*
+.vscode/
 
 *.pb.h
 *.pb.cc
