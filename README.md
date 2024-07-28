@@ -1,4 +1,18 @@
+- [bazel + protobuf 小练习](#bazel--protobuf-小练习)
+		- [特别声明！！](#特别声明)
+		- [什么是反射](#什么是反射)
+		- [作用](#作用)
+		- [环境](#环境)
+		- [编译运行](#编译运行)
+		- [效果](#效果)
+
 # bazel + protobuf 小练习
+
+### <font color="red">特别声明！！</font>
+
+github 上的 [`EscapeFromEarth`](https://github.com/EscapeFromEarth)、[`SoHard2Name`](https://github.com/SoHard2Name)、[`abcpony`](https://github.com/abcpony)，都是我本人（`NJK`），就是偶尔换来换去而已。项目是本人独立完成的。
+
+作者 `QQ`：`2490273063`
 
 ### 什么是反射
 
@@ -29,7 +43,7 @@
 
 先在项目根目录下运行 `protoc ./proto/*.proto --cpp_out=./`。这个“--cpp_out”虽然这样写，但其实生成文件是输出到 proto 文件夹下。
 
-毕竟生成文件就是要拿来用的，自己手动生成得了，而且直接让 `bazel` 帮忙生成很麻烦，我试了好多方法也都不行（如果有佬可以教我用 `bazel` 随时欢迎 + 感谢 `本人QQ 2490273063`）。
+毕竟生成文件就是要拿来用的，自己手动生成得了，而且直接让 `bazel` 帮忙生成很麻烦，我试了好多方法也都不行（如果有佬可以教我用 `bazel` 随时欢迎 + 感谢）。
 
 然后再执行 `bazel build //:test`。
 
