@@ -8,13 +8,13 @@
 
 # bazel + protobuf 小练习
 
-### <font color="red">特别声明！！</font>
+## <font color="red">特别声明！！</font>
 
 github 上的 [`EscapeFromEarth`](https://github.com/EscapeFromEarth)、[`SoHard2Name`](https://github.com/SoHard2Name)、[`abcpony`](https://github.com/abcpony)，都是我本人（`NJK`），就是偶尔换来换去而已。项目是本人独立完成的。
 
 作者 `QQ`：`2490273063`
 
-### 什么是反射
+## 什么是反射
 
 > 以下是个人不严谨但好懂的理解。
 
@@ -22,7 +22,7 @@ github 上的 [`EscapeFromEarth`](https://github.com/EscapeFromEarth)、[`SoHard
 
 举个简单的例子：有一条信息记录的是根据触摸一个物品的质感来确定它的材质的一些**规则**（描述符），而有一个具体的物品（一个对象），还有一个执行判断的人（反射）；那么人（反射）有一个功能（方法）就是通过*了解规则和触摸物品*（传入描述符和对象）从而得出物品是什么材质的（对象特征）。这样总能理解了吧，这个时候你再随便看几个相关的函数就会豁然开朗了。
 
-### 作用
+## 作用
 
 > 目的无他，就是练习一下 `bazel` 和反射的应用（我也没想到会写这么久的）。
 
@@ -33,13 +33,13 @@ github 上的 [`EscapeFromEarth`](https://github.com/EscapeFromEarth)、[`SoHard
 
 上面所说的 `message` 对象可以是任意只含有 `uint32`、`enum`、`string`、`bytes` 类型的字段的对象，支持 `repeated` 以及消息的多层嵌套。
 
-### 环境
+## 环境
 
 - linux ubuntu 20.04
 - bazel 6.4.0
 - libprotoc 3.19.4
 
-### 编译运行
+## 编译运行
 
 先在项目根目录下运行 `protoc ./proto/*.proto --cpp_out=./`。这个“--cpp_out”虽然这样写，但其实生成文件是输出到 proto 文件夹下。
 
@@ -49,7 +49,7 @@ github 上的 [`EscapeFromEarth`](https://github.com/EscapeFromEarth)、[`SoHard
 
 最后 `cd bazel-bin; ./test` 就可以运行了。
 
-### 效果
+## 效果
 ```markdown
 hello world!
 ------------------------------------
